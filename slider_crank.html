@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Slider Crank Mechanism</title>
+        <link rel="stylesheet" href="slider_crank.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Kdam+Thmor+Pro&family=Roboto+Flex:opsz,wght@8..144,500;8..144,600;8..144,700&family=Staatliches&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="title">Slider Crank Mechanism</h1><br>
+        <br>
+        <label for="crank_rad" style="position: relative;" class="crank_rad">Crank Raduis(r = 10 to 100):</label>
+        <input type="number" id="crank_rad" name="crank_rad" min="10" max="100" value="40" onchange="numeric_crank_rad()"><br>
+        <br>
+        <label for="connecting_rod" style="position: relative;">Connecting Rod Length (l = 2.5r to 6r):</label>
+        <input type="number" id="connecting_rod" name="connecting_rod" min="???" max="???" value="100" onchange="numeric_connectingrod_length()"><br>
+        <br>
+        <label for="thetha2_val" style="position: relative;">Crank Angle:</label>
+        <input type="number" id="thetha2_val" name="thetha2_val" min="0" max="360" value="0"><br>
+        <br>
+        <input type="button" id="start" value="Start Animation" onclick="startAnimation();"><br>
+        <br>
+        <input type="button" id="stop" value="Stop Animation" onclick="stopAnimation();">
+        <br>
+        <br>
+        <p>The distance of piston from origin is: </p><p id="main"></p><p> units</p>
+        <br>
+        <br>
+        <svg id="assembly">
+            <g transform="translate(200, 150)">
+                <circle id="shaft" cx="0" cy="0" r="5" />
+                <line id="crank" x1="0" y1="0" x2="40" y2="0" />
+                <line id="connecting-rod" x1="40" y1="0" x2="140" y2="0" />
+                <circle id="pin" cx="40" cy="0" r="5" />
+                <g id="piston" transform="translate(140, 0)">
+                    <circle r="5" cx="0" cy="0" />
+                    <rect width="50" height="20" x="-25" y="-10" style="fill:red;stroke:black;stroke-width:5;opacity:0.5">
+                    </rect>
+                </g>
+            </g>
+        </svg>
+        <script src="slider_crank.js"></script>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+label{
+    font-family: 'Roboto Flex', sans-serif;
+    color: white;
+    font-size: 200%;
+}
+
+#title{
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 400%;
+    color: white;
+    margin: auto;
+    width: fit-content;
+    padding: 1%;
+    /*margin-left: 25%;*/
+}
+
+body {
+    background: linear-gradient(to right, #3e5255, #4CA1AF);
+    height: auto;
+}
+
+#crank_rad{
+    position: relative;
+    width: 100px;
+    /*top: 202px;
+    left: 480px;*/
+    font-size: 24px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+#connecting_rod{
+    position: relative;
+    width: 100px;
+    /*top: 252px;
+    left: 620px;*/
+    font-size: 24px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+#thetha2_val{
+    position: relative;
+    width: 80px;
+    /*top: 302px;
+    left: 280px;*/
+    font-size: 24px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+#stop{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #3944ac;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 24px;
+    position: relative;
+    /*top: 40%;
+    left: 60%;*/
+}
+
+#start {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #3944ac;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 24px;
+    position: relative;
+    /*top: 30%;
+    left: 60%;*/
+}
+
+#assembly{
+    stroke: hsl(0, 0%, 0%);
+    background: hsl(177deg 38% 83%);
+    stroke-width: 7.5px;
+    fill: white;
+    position: relative;
+    /*top: 200px;
+    left: 200px;
+    width: auto;*/
+    width: 100%;
+    height: 300px;
+}
+
+#statement{
+    /*left: 100px;*/
+    position: relative;
+    /*top: 320px;*/
+    font-size: 32px;
+}
+
+#main{
+    /*top: 320px;*/
+    position: relative;
+    /*left: 590px;*/
+    font-size: 200%;
+}
+
+p {
+    font-size: 200%;
+    color: #FFFFFF;
+    font-family: 'Roboto Flex', sans-serif;
+    margin: 0;
+    display: inline;
+}
+
+#shaft{
+    fill: #FFFFFF;
+}
